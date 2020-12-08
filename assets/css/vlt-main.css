@@ -342,7 +342,7 @@
 -------------------------------------------- */
 .vlt-display-1
 {
-    font-size: 1rem; 
+    font-size: 2rem; 
 
     display: block;
 }
@@ -1051,7 +1051,7 @@ h1,
 h1.vlt-large-heading,
 .h1.vlt-large-heading
 {
-    font-size: 7.5rem;
+    font-size: 9rem;
     font-weight: 600;
 }
 
@@ -1578,8 +1578,7 @@ select:focus::-webkit-input-placeholder
 {
     font-size: 1rem;
 
-    white-space: nowrap; 
-    text-transform: uppercase;
+    white-space: nowrap;
 }
 .vlt-navbar-contacts a:hover
 {
@@ -2079,10 +2078,10 @@ select:focus::-webkit-input-placeholder
 -------------------------------------------- */
 [data-anchor='Home'] p
 {
-    font-size: 2rem; 
-    line-height: 2rem;
+    font-size: 1.5rem; 
+    line-height: 2.5rem;
 
-    color: rgba(255, 255, 255, .6);
+    color: #ffffff;
 }
 
 [data-anchor='About'] p
@@ -3178,13 +3177,7 @@ select:focus::-webkit-input-placeholder
 }
 .vlt-fullpage-slider .vlt-section.active .vlt-section__ken-burn-background img
 {
-    -webkit-transition: -webkit-transform 5s;
-            transition: -webkit-transform 5s;
-            transition:         transform 5s;
-            transition:         transform 5s, -webkit-transform 5s; 
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
+
 }
 .vlt-fullpage-slider-progress-bar
 {
