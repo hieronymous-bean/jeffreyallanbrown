@@ -330,7 +330,7 @@
 -------------------------------------------- */
 .has-accent-color
 {
-    color: #394C88;
+    color: #3AFFFF;
 }
 
 .has-white-color
@@ -933,13 +933,13 @@
 ::selection
 {
     color: #fff;
-    background-color: #394C88;
+    background-color: #3AFFFF;
 }
 
 ::-moz-selection
 {
     color: #fff;
-    background-color: #394C88;
+    background-color: #3AFFFF;
 }
 
 /* BODY
@@ -1016,7 +1016,7 @@ a:active
 }
 a:hover
 {
-    color: #394C88;
+    color: #3AFFFF;
 }
 
 /* HEADINGS
@@ -1668,7 +1668,7 @@ select:focus::-webkit-input-placeholder
 .vlt-default-menu__navigation .sf-menu > li.active > a,
 .vlt-default-menu__navigation .sf-menu > li:hover > a
 {
-    color: #394C88;
+    color: #3AFFFF;
 }
 
 /* HEADER: OFFCANVAS
@@ -2902,7 +2902,7 @@ select:focus::-webkit-input-placeholder
     text-transform: uppercase;
 
     color: #fff;
-    background-color: #394C88;
+    background-color: #080B10;
 }
 .vlt-btn--primary:hover
 {
@@ -3236,7 +3236,7 @@ select:focus::-webkit-input-placeholder
             transform-origin: top;
 
     border-radius: .3125rem;
-    background-color: #394C88;
+    background-color: #3AFFFF;
 }
 
 /* WIDGET: PARTNERS
@@ -3465,7 +3465,7 @@ select:focus::-webkit-input-placeholder
 }
 .vlt-slider-controls .vlt-swiper-pagination .swiper-pagination-bullet-active
 {
-    background-color: #394C88;
+    background-color: #3AFFFF;
 }
 .vlt-slider-controls .vlt-swiper-pagination .swiper-pagination-bullet + .swiper-pagination-bullet
 {
