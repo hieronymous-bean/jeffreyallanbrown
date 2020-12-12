@@ -60,7 +60,29 @@ const banner = [
 
 // Build Files //
 // ------------------------------
+gulp.task('buildCoreCSS', () => {
+    return gulp.src(['./src/assets/css/**/**.css','./src/assets/css/**.css'])
+    .pipe(gulp.dest('./dist/assets/css'));
+});
 
+gulp.task('buildCoreJS', () => {
+    return gulp.src([
+        './src/assets/vendors/**.js',
+        './src/assets/scripts/**.js'])
+    .pipe(gulp.dest('./dist/assets/js'));
+});
+
+gulp.task('buildCoreImages', () => {
+    return gulp.src(['./src/assets/img/**'])
+    .pipe(gulp.dest('./dist/assets/img'));
+});
+
+gulp.task('buildCoreFonts', () => {
+    return gulp.src(['./src/assets/fonts/**'])
+    .pipe(gulp.dest('./dist/assets/fonts'));
+});
+
+gulp.task('buildCoreFiles', series('buildCoreCSS','buildCoreJS','buildCoreImages','buildCoreFonts'));
 
 
 // Compile Views //
@@ -82,4 +104,4 @@ gulp.task('compileViews', series('buildCoreView'));
 // Full Build //
 // ------------------------------
 
-gulp.task('mainBuild', series('compileViews'));
+gulp.task('mainBuild', series('buildCoreFiles','compileViews'));
