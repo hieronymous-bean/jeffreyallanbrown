@@ -1,0 +1,111 @@
+doctype html
+html.no-js.vlt-is--homepage.vlt-is--footer-fixed(lang="en")
+head
+	meta(charset="utf-8")
+	title
+		| Jeffrey Allan Brown | Full-Stack Web Developer
+	meta(name="description" content="Jeffrey Allan Brown | Full-Stack Web Developer")
+	meta(http-equiv="X-UA-Compatible" content="IE=edge")
+	meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+	link(rel="icon" type="image/svg" href="assets/img/root/favicon.svg")
+	link(rel="stylesheet" href="assets/css/bootstrap.min.css")
+	link(rel="stylesheet" href="assets/fonts/Gilroy/style.css")
+	link(rel="stylesheet" href="assets/fonts/LineIcons/Pro-Regular/font-css/LineIcons.css")
+	link(rel="stylesheet" href="assets/css/vlt-plugins.min.css")
+	link(rel="stylesheet" href="assets/css/vlt-main.min.css")
+	link(rel="stylesheet" href="assets/css/custom.css")
+
+body.animsition
+	header.vlt-header.vlt-header--default
+		.vlt-navbar.vlt-navbar--main.vlt-navbar--transparent.vlt-navbar--sticky
+			.vlt-navbar-background
+			.vlt-navbar-inner
+				.vlt-navbar-inner--left
+					a.vlt-navbar-logo(href="index.html")
+						img(src="assets/img/root/logo.svg" alt="Jeffrey Allan Brown")
+				.vlt-navbar-inner--center
+					.container
+						nav.clt-default-menu__navigation
+							ul.sf-menu
+								li(data-menuanchor="Home")
+									a(href="#Home") Home
+				.vlt-navbar-inner-right
+					.d-flex.align-items-center
+						.vlt-navbar-contacts
+							a(href="tel:+72126742510") 123
+						a.vlt-menu-burger.js-offcanvas-menu-open(href="#")
+							svg(xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round")
+								line(x1="3" y1="12" x2="21" y2="12")
+								line(x1="3" y1="6" x2="21" y2="6")
+								line(x1="3" y1="18" x2="21" y2="18")
+	.vlt-offcanvas-menu
+		.vlt-offcanvas-menu__header
+			.vlt-language-switcher
+				a.is-active(href="#")
+					| EN
+			a.vlt-menu-burger.vlt-menu-burger--opened.js-offcanvas-menu-close(href="#")
+				svg(xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24")
+					defs
+						path(d="M18 6L6 18M6 6l12 12")
+		nav.vlt-offcanvas-menu__navigation
+			ul.sf-menu
+				li(data-menuanchor="Home")
+					a(href="#Home")
+			.vlt-offcanvas-menu__footer
+				.vlt-offcanvas-menu__socials
+					a.vlt-social-icon.vlt-social-icon--style-1(href="#")
+						i.lnir-facebook-filled
+					a.vlt-social-icon.vlt-social-icon--style-1(href="#")
+						i.lnir-twitter-original
+					a.vlt-social-icon.vlt-social-icon--style-1(href="#")
+						i.lnir-instagram
+			.vlt-offcanvas-menu__copyright
+				p © 2020 Copyright.<br>All rights reserved.
+	.vlt-site-overlay
+	.vlt-fixed-socials
+		a.vlt-social-icon.vlt-social-icon--style-1(href="#")
+			i.lnir-facebook-filled
+		a.vlt-social-icon.vlt-social-icon--style-1(href="#")
+			i.lnir-twitter-original
+		a.vlt-social-icon.vlt-social-icon--style-1(href="#")
+			i.lnir-instagram
+	main.vlt-main
+		.vlt-fullpage-slider(data-loop-top="" data-loop-bottom="" data-speed="450")
+			.vlt-section.pp-scrollable(data-anchor="Home")
+				.vlt-section__vertical-align
+					.vlt-section__content
+						.vlt-section__ken-burn-background.has-mobile-image
+							img(src="assets/img/home.jpg" alt="")
+							img(src="assets/img/home-mobile.jpg" alt="")
+						.container
+							.row
+								.col-lg-5
+									.vlt-gap-160
+									.vlt-animated-block(data-animation-name="fadeInUpSm" style="animation-delay:0s; animation-duration:700ms;")
+										.vlt-video-button
+											a(href="https://vimeo.com/367945766" data-fancybox data-small-btn="true" rel="nofollow")
+												svg(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 27")
+													defs()
+													path(fill="currentColor" d="M23.7471 13.2802L.876191 26.4847.876192.0757026 23.7471 13.2802z")
+									.vlt-gap-100
+									.vlt-animated-block(data-animation-name="fadeInUpSm" style="animation-delay:.1s; animation-duration:700ms;")
+										span.vlt-display-1.has-white-color
+											| Full-Stack Web Developer
+									.vlt-gap-15
+									.vlt-animated-block(data-animation-name="fadeInUpSm" style="animation-delay:.2s; animation-duration:700ms;")
+										h1.vlt-large-heading Jeffrey
+											span.has-accent-color .
+									.vlt-gap-15
+									.vlt-animated-block(data-animation-name="fadeInUpSm" style="animation-delay:.3s; animation-duration:700ms;")
+										p Working with client and community, we deliver masterplans that create vibrant new places and spaces, attract people, and encourage.
+	footer.vlt-footer.vlt-footer--default.vlt-footer--fixed
+		.vlt-footer-copyright
+			p © Jeffrey Allan Brown. 2021
+		.vlt-language-switcher
+			a.is-active(href="#")
+				| EN
+
+	script(src="assets/vendors/jquery-3.5.1.min.js")
+	script(src="assets/scripts/vlt-plugins.min.js")
+	script(src="assets/scripts/vlt-helpers.js")
+	script(src="assets/scripts/vlt-controllers.min.js")

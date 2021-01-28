@@ -330,7 +330,7 @@
 -------------------------------------------- */
 .has-accent-color
 {
-    color: #3AFFFF;
+    color: #cf000f;
 }
 
 .has-white-color
@@ -342,7 +342,7 @@
 -------------------------------------------- */
 .vlt-display-1
 {
-    font-size: 2rem; 
+    font-size: 1rem; 
 
     display: block;
 }
@@ -356,7 +356,7 @@
 
 .message.danger
 {
-    color: #394C88;
+    color: #cf000f;
 }
 
 /* GAPS
@@ -928,18 +928,18 @@
 ::-moz-selection
 {
     color: #fff;
-    background-color: #394C88;
+    background-color: #cf000f;
 }
 ::selection
 {
     color: #fff;
-    background-color: #3AFFFF;
+    background-color: #cf000f;
 }
 
 ::-moz-selection
 {
     color: #fff;
-    background-color: #3AFFFF;
+    background-color: #cf000f;
 }
 
 /* BODY
@@ -1016,7 +1016,7 @@ a:active
 }
 a:hover
 {
-    color: #3AFFFF;
+    color: #cf000f;
 }
 
 /* HEADINGS
@@ -1051,7 +1051,7 @@ h1,
 h1.vlt-large-heading,
 .h1.vlt-large-heading
 {
-    font-size: 9rem;
+    font-size: 7.5rem;
     font-weight: 600;
 }
 
@@ -1578,7 +1578,8 @@ select:focus::-webkit-input-placeholder
 {
     font-size: 1rem;
 
-    white-space: nowrap;
+    white-space: nowrap; 
+    text-transform: uppercase;
 }
 .vlt-navbar-contacts a:hover
 {
@@ -1668,7 +1669,7 @@ select:focus::-webkit-input-placeholder
 .vlt-default-menu__navigation .sf-menu > li.active > a,
 .vlt-default-menu__navigation .sf-menu > li:hover > a
 {
-    color: #3AFFFF;
+    color: #cf000f;
 }
 
 /* HEADER: OFFCANVAS
@@ -1807,7 +1808,7 @@ select:focus::-webkit-input-placeholder
 .vlt-offcanvas-menu__navigation .sf-menu > li.active > a,
 .vlt-offcanvas-menu__navigation .sf-menu > li:hover > a
 {
-    color: #394C88;
+    color: #cf000f;
 }
 .vlt-offcanvas-menu__footer
 {
@@ -2068,9 +2069,9 @@ select:focus::-webkit-input-placeholder
 }
 .vlt-comment-item__inner .vlt-comment-reply:hover
 {
-    background-color: #394C88; 
-    -webkit-box-shadow: inset 0 0 0 1px #394C88;
-            box-shadow: inset 0 0 0 1px #394C88;
+    background-color: #cf000f; 
+    -webkit-box-shadow: inset 0 0 0 1px #cf000f;
+            box-shadow: inset 0 0 0 1px #cf000f;
 }
 
 /* 04. Pages */
@@ -2078,10 +2079,11 @@ select:focus::-webkit-input-placeholder
 -------------------------------------------- */
 [data-anchor='Home'] p
 {
-    font-size: 1.5rem; 
-    line-height: 2.5rem;
+    font-size: .9375rem; 
 
-    color: #ffffff;
+    max-width: 23.125rem;
+
+    color: rgba(255, 255, 255, .6);
 }
 
 [data-anchor='About'] p
@@ -2564,7 +2566,7 @@ select:focus::-webkit-input-placeholder
 
 ::-webkit-scrollbar-thumb
 {
-    background-color: #394C88;
+    background-color: #cf000f;
 }
 
 /* PARTIAL: FIXED SOCIALS
@@ -2653,7 +2655,7 @@ select:focus::-webkit-input-placeholder
 }
 .vlt-language-switcher a.is-active
 {
-    color: #394C88;
+    color: #cf000f;
 }
 .vlt-language-switcher a + a
 {
@@ -2755,7 +2757,7 @@ select:focus::-webkit-input-placeholder
 
     opacity: .6;
     border-radius: 50%;
-    background-color: #394C88;
+    background-color: #cf000f;
 }
 
 .double-bounce-two
@@ -2804,7 +2806,7 @@ select:focus::-webkit-input-placeholder
 .fancybox-loading
 {
     border: 2px solid rgba(255, 255, 255, .2);
-    border-top-color: #394C88;
+    border-top-color: #cf000f;
 }
 
 /* VENDOR: JARALLAX
@@ -2902,7 +2904,7 @@ select:focus::-webkit-input-placeholder
     text-transform: uppercase;
 
     color: #fff;
-    background-color: #080B10;
+    background-color: #cf000f;
 }
 .vlt-btn--primary:hover
 {
@@ -3177,7 +3179,13 @@ select:focus::-webkit-input-placeholder
 }
 .vlt-fullpage-slider .vlt-section.active .vlt-section__ken-burn-background img
 {
-
+    -webkit-transition: -webkit-transform 5s;
+            transition: -webkit-transform 5s;
+            transition:         transform 5s;
+            transition:         transform 5s, -webkit-transform 5s; 
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
 }
 .vlt-fullpage-slider-progress-bar
 {
@@ -3236,7 +3244,7 @@ select:focus::-webkit-input-placeholder
             transform-origin: top;
 
     border-radius: .3125rem;
-    background-color: #3AFFFF;
+    background-color: #cf000f;
 }
 
 /* WIDGET: PARTNERS
@@ -3349,7 +3357,7 @@ select:focus::-webkit-input-placeholder
     height: 100%;
 
     border-radius: .4375rem;
-    background-color: #394C88;
+    background-color: #cf000f;
 }
 
 /* WIDGET: PULLQUOTE
@@ -3370,7 +3378,7 @@ select:focus::-webkit-input-placeholder
 
     height: 2.375rem;
 
-    color: #394C88;
+    color: #cf000f;
 }
 .vlt-pullquote__text
 {
@@ -3465,7 +3473,7 @@ select:focus::-webkit-input-placeholder
 }
 .vlt-slider-controls .vlt-swiper-pagination .swiper-pagination-bullet-active
 {
-    background-color: #3AFFFF;
+    background-color: #cf000f;
 }
 .vlt-slider-controls .vlt-swiper-pagination .swiper-pagination-bullet + .swiper-pagination-bullet
 {
@@ -3508,9 +3516,9 @@ select:focus::-webkit-input-placeholder
 .vlt-slider-controls--style-1 .vlt-swiper-button-prev:hover,
 .vlt-slider-controls--style-1 .vlt-swiper-button-next:hover
 {
-    background-color: #394C88;
-    -webkit-box-shadow: inset 0 0 0 1px #394C88;
-            box-shadow: inset 0 0 0 1px #394C88;
+    background-color: #cf000f;
+    -webkit-box-shadow: inset 0 0 0 1px #cf000f;
+            box-shadow: inset 0 0 0 1px #cf000f;
 }
 .vlt-slider-controls--style-1 .vlt-swiper-button-prev svg,
 .vlt-slider-controls--style-1 .vlt-swiper-button-next svg

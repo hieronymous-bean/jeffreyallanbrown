@@ -61,19 +61,18 @@ const banner = [
 // Build Files //
 // ------------------------------
 gulp.task('buildCoreCSS', () => {
-    return gulp.src(['./src/assets/css/**/**.css','./src/assets/css/**.css'])
+    return gulp.src(['./src/assets/css/**.css','./src/assets/css/framework/**.css', './src/assets/css/plugins/**.css'])
     .pipe(gulp.dest('./dist/assets/css'));
 });
 
 gulp.task('buildCoreJS', () => {
     return gulp.src([
-        './src/assets/vendors/**.js',
         './src/assets/scripts/**.js'])
-    .pipe(gulp.dest('./dist/assets/js'));
+    .pipe(gulp.dest('./dist/assets/scripts'));
 });
 
 gulp.task('buildCoreImages', () => {
-    return gulp.src(['./src/assets/img/**'])
+    return gulp.src(['./src/assets/img/**','./src/assets/css/**.gif'])
     .pipe(gulp.dest('./dist/assets/img'));
 });
 
@@ -82,18 +81,23 @@ gulp.task('buildCoreFonts', () => {
     .pipe(gulp.dest('./dist/assets/fonts'));
 });
 
-gulp.task('buildCoreFiles', series('buildCoreCSS','buildCoreJS','buildCoreImages','buildCoreFonts'));
+gulp.task('buildVendorFiles', () => {
+    return gulp.src(['./src/assets/vendors/**'])
+    .pipe(gulp.dest('./dist/assets/vendors'));
+});
+
+gulp.task('buildCoreFiles', series('buildCoreCSS','buildCoreJS','buildCoreImages','buildCoreFonts','buildVendorFiles'));
 
 
 // Compile Views //
 // ------------------------------
 
 gulp.task('buildCoreView', function buildHTML() {
-    return gulp.src('./src/index.pug')
+    return gulp.src('./src/views/index.pug')
     .pipe(pug({
       pretty: true
     }))
-    .pipe(gulp.dest('./dist/pages'));
+    .pipe(gulp.dest('./dist'));
   });
 
 gulp.task('compileViews', series('buildCoreView'));
