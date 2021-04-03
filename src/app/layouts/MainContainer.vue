@@ -1,326 +1,787 @@
 <template>
-  <!--Preloader-->
-  <div class="atail-preloader-wrapper">
-    <span>
-      <span class="atail-dot"></span>
-      <span class="atail-dot"></span>
-      <span class="atail-dot"></span>
-    </span>
-    <div class="atail-preloader">
-      <span>
-        <span class="atail-dot"></span>
-        <span class="atail-dot"></span>
-        <span class="atail-dot"></span>
-      </span>
+  <div class="loader">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
     </div>
   </div>
-  <!--/Preloader-->
+  <div class="click-capture"></div>
 
-  <div class="atail container-fluid">
-    <header class="atail-header">
-      <div class="container-fluid ">
-        <div class="logo atail-logo-portrait">
-          <a href="index.html">
-            <span class="atail-text-logo">
-              <img src="src/assets/img/logo.png" alt="jeffreyallanbrown">
-            </span>
-          </a>
-        </div>
-      <div class="show-nav">
-        <span data-action="show-nav">
-          <span>
-            <span></span>
-            <span></span>
-          </span>
-        </span>
+  <!-- Sidebar Menu-->
+  <div class="menu">
+    <span class="close-menu icon-cross2 right-boxed"></span>
+    <ul class="menu-list right-boxed">
+      <li data-menuanchor="page1">
+        <a href="#page1">Home</a>
+      </li>
+      <li data-menuanchor="page2">
+        <a href="#page2">Specialization</a>
+      </li>
+      <li data-menuanchor="page3">
+        <a href="#page3">Resume</a>
+      </li>
+      <li data-menuanchor="page4">
+        <a href="#page4">About</a>
+      </li>
+      <li data-menuanchor="page5">
+        <a href="#page5">Projects</a>
+      </li>
+      <li data-menuanchor="page7">
+        <a href="#page7">Testimonials</a>
+      </li>
+      <li data-menuanchor="page8">
+        <a href="#page8">Contact</a>
+      </li>
+    </ul>
+    <div class="menu-footer right-boxed">
+      <div class="social-list">
+        <a href="" class="icon ion-social-twitter"></a>
+        <a href="" class="icon ion-social-facebook"></a>
+        <a href="" class="icon ion-social-googleplus"></a>
+        <a href="" class="icon ion-social-linkedin"></a>
+        <a href="" class="icon ion-social-dribbble-outline"></a>
       </div>
-        <nav class="row">
-          <div class="grid-bg row">
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-          </div>
-          <ol id="menu-menu-1" class="nav-list">
-            <li class="menu-item current-menu-item col-xs-2 ">
-                <a href="index.html"><span>Projects</span></a>
-            </li>
-            <!-- <li class="menu-item col-xs-2 ">
-                <a href="about.html"><span>About</span></a>
-            </li>
-            <li class="menu-item col-xs-2 ">
-                <a href="resume.html"><span>Resume</span></a>
-            </li>
-            <li class="menu-item col-xs-2 ">
-                <a href="contact.html"><span>Contact</span></a>
-            </li>
-            <li class="menu-item col-xs-2 ">
-                <a href="blog.html"><span>Writing</span></a>
-            </li> -->
-          </ol>
-        </nav>
+      <div class="copy">© jeffreyallanbrown 2021. All Rights Reseverd</div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar navbar-fullpage boxed">
+    <div class="navbar-bg"></div>
+    <a class="brand" href="#">
+      <img alt="" src="" />
+      <div class="brand-info">
+        <div class="brand-name">jeffreyallanbrown</div>
       </div>
-    </header>
+    </a>
 
-    <main>
-      <div class="main-scroll">
-        <div class="project-preview-images">
-          <div class="preview-images-item">
-            <img src="https://images.unsplash.com/photo-1542753172-bcd7253a78a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="Borges" class="project-1">
-            <img src="https://images.unsplash.com/photo-1542753172-bcd7253a78a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="Overflow" class="project-2">
-            <img src="https://images.unsplash.com/photo-1542753172-bcd7253a78a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="Doughnet" class="project-3">
-            <img src="https://images.unsplash.com/photo-1542753172-bcd7253a78a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="Celestial Bodies" class="project-4">
-            <img src="https://images.unsplash.com/photo-1542753172-bcd7253a78a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="Urchin" class="project-5">
-          </div>
-        </div>
+    <button
+      type="button"
+      class="navbar-toggle"
+      data-toggle="collapse"
+      data-target="#navbar-collapse"
+      aria-expanded="false"
+    >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
 
-        <div class="row ">
-          <div class="col-md-10 no-padding">
-            <div class="project-preview-arrow-wrapper">
-              <span class="project-preview-arrow">
-                <span>
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="57.143px" height="34.454px" viewBox="0 0 57.143 34.454" enable-background="new 0 0 57.143 34.454" xml:space="preserve">
-                    <g>
-                      <g>
-                        <polygon points="51.908,17.599 46.891,13.1 46.891,17.094 6.904,17.094 6.904,18.094 46.891,18.094 46.891,22.099"/>
-                      </g>
-                    </g>
-                  </svg>
-                </span>
-                <span>Scroll</span>
-              </span>
-            </div>
-            <div class="project-preview" tabindex="0">
-              <div class="display-table">
-                <div class="display-table-cell">
-                  <div class="row-col-10" id="project-1">
-                    <div class="col-xs-5 col-sm-5 col-md-2 project-count">
-                      <span><span class="project-count-number">1</span></span>/
-                      <span>5</span>
-                    </div>
-                    <div class="col-xs-7 col-sm-6 col-md-4 no-padding">
-                      <div class="content">
-                        <article>
-                          <div class="preview-article-header">
-                            <h2>
-                              <a href="https://github.com/hieronymous-bean/borges">Borges</a>
-                            </h2>
-                          </div>
-                          <div class="preview-article-text">
-                            <div class="preview-text-content">
-                              <p>
-                                An application designed and developed to streamline the writing and editing process for authors.
-                              </p>
-                            </div>
-                          </div>
-                          <a class="open-full-post" href="https://github.com/hieronymous-bean/borges"><span>View Project</span></a>
-                        </article>
+    <div class="contacts d-none d-md-block">
+      <div class="contact-item">440-650-7114</div>
+      <div class="contact-item spacer">/</div>
+      <div class="contact-item">
+        <a href="mailto:jeffrey@jeffreyallanbrown.com"
+          >jeffrey@jeffreyallanbrown.com</a
+        >
+      </div>
+    </div>
+  </header>
+  <div class="copy-bottom white boxed">© jeffreyallanbrown 2021</div>
+  <div class="social-list social-list-bottom boxed">
+    <a href="" class="icon ion-social-twitter"></a>
+    <a href="" class="icon ion-social-facebook"></a>
+    <a href="" class="icon ion-social-googleplus"></a>
+    <a href="" class="icon ion-social-linkedin"></a>
+    <a href="" class="icon ion-social-dribbble-outline"></a>
+  </div>
+  <div class="pagepiling">
+    <div data-anchor="page1" class="pp-scrollable text-white section section-1">
+      <div class="scroll-wrap">
+        <div
+          class="section-bg"
+          style="background-image: url()"
+        ></div>
+        <div class="scrollable-content">
+          <div class="vertical-centred">
+            <div class="boxed boxed-inner">
+              <div class="boxed">
+                <div class="container">
+                  <div class="intro">
+                    <div class="row">
+                      <div class="col-md-8 col-lg-6">
+                        <h1
+                          class="display-2 text-white wow fadeIn"
+                          data-wow-delay="0.1s"
+                        >
+                          <span class="text-primary">Hi,</span> I'm Jeffrey
+                        </h1>
+                        <a
+                          class="popup-youtube"
+                          href=""
+                          ><span class="icon ion-ios-play"></span>Watch video
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              
-              <div class="display-table">
-                <div class="display-table-cell">
-                  <div class="row-col-10" id="project-2">
-                    <div class="col-xs-5 col-sm-5 col-md-2 project-count">
-                      <span><span class="project-count-number">2</span></span>/
-                      <span>5</span>
-                    </div>
-                    <div class="col-xs-7 col-sm-6 col-md-4 no-padding">
-                      <div class="content">
-                        <article>
-                          <div class="preview-article-header">
-                                <h2>
-                                    <a data-action="open-full-post" data-post="project-2"
-                                       href="https://github.com/hieronymous-bean/overflow">Overflow</a>
-                                </h2>
-                            </div>
-                            <div class="preview-article-text">
-                                <div class="preview-text-content">
-                                    <p>
-                                        Web application for creating flow-charts and interactive diagrams.</p>
-                                </div>
-                            </div>
-
-                            <a class="open-full-post" href="https://github.com/hieronymous-bean/overflow"><span>View Project</span></a>
-                        </article>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="display-table">
-                            <div class="display-table-cell">
-
-                                <div class="row-col-10"
-                                     id="project-3">
-                                    <div class="col-xs-5 col-sm-5 col-md-2 project-count">
-                                        <span><span class="project-count-number">3</span></span>
-                                        /
-                                        <span>5</span>
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6 col-md-4 no-padding">
-                                        <div class="content">
-                                            <article>
-
-                                                <div class="preview-article-header">
-                                                    <h2>
-                                                        <a data-action="open-full-post" data-post="project-3"
-                                                           href="https://github.com/hieronymous-bean/doughnet">Doughnet</a>
-                                                    </h2>
-                                                </div>
-                                                <div class="preview-article-text">
-                                                    <div class="preview-text-content">
-                                                        <p>
-                                                            Personal finance application developed specifically for debt consolidation.</p>
-                                                    </div>
-                                                </div>
-
-                                                <a class="open-full-post" href="https://github.com/hieronymous-bean/doughnet"><span>View Project</span></a>
-                                            </article>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="display-table">
-                            <div class="display-table-cell">
-
-                                <div class="row-col-10"
-                                     id="project-4">
-                                    <div class="col-xs-5 col-sm-5 col-md-2 project-count">
-                                        <span><span class="project-count-number">4</span></span>
-                                        /
-                                        <span>5</span>
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6 col-md-4 no-padding">
-                                        <div class="content">
-                                            <article>
-
-                                                <div class="preview-article-header">
-                                                    <h2>
-                                                        <a data-action="open-full-post" data-post="project-4"
-                                                           href="https://github.com/hieronymous-bean/celestial-bodies">Celestial Bodies</a>
-                                                    </h2>
-                                                </div>
-                                                <div class="preview-article-text">
-                                                    <div class="preview-text-content">
-                                                        <p>
-                                                            Custom wrapper built around NASA's data API, providing easy access to their database of images, data, and more. </p>
-                                                    </div>
-                                                </div>
-
-                                                <a class="open-full-post" 
-                                                   href="https://github.com/hieronymous-bean/celestial-bodies"><span>View Project</span></a>
-                                            </article>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="display-table">
-                            <div class="display-table-cell">
-
-                                <div class="row-col-10"
-                                     id="project-5">
-                                    <div class="col-xs-5 col-sm-5 col-md-2 project-count">
-                                        <span><span class="project-count-number">5</span></span>
-                                        /
-                                        <span>5</span>
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6 col-md-4 no-padding">
-                                        <div class="content">
-                                            <article>
-
-                                                <div class="preview-article-header">
-                                                    <h2>
-                                                        <a data-action="open-full-post" data-post="project-5"
-                                                           href="https://github.com/hieronymous-bean/urchin">Urchin</a>
-                                                    </h2>
-                                                </div>
-                                                <div class="preview-article-text">
-                                                    <div class="preview-text-content">
-                                                        <p>Customizable front-end interface for web applications and dashboards.</p>
-                                                    </div>
-                                                </div>
-
-                                                <a class="open-full-post" 
-                                                   href="https://github.com/hieronymous-bean/urchin"><span>View Project</span></a>
-                                            </article>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- <div class="col-md-2 all-projects-ajax-btn">
-                    <a href="#" data-action="all-projects" data-count="10"><span><span></span><span></span></span>All Projects</a>
-                </div> -->
             </div>
-
-
-        </div> <!-- main-scroll -->
-
-        <div class="grid-bg row">
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
+          </div>
         </div>
-
-    </main> <!-- main -->
-
-    <div class="sides">
-        <div class=" container-fluid ">
-            <div class="left-side">
-                <div class="side-content">
-                  <a href="https://github.com/hieronymous-bean">Github</a>
-                  <a href="https://www.linkedin.com/in/jeffreyallanbrown/">LinkedIn</a>
-                </div>
-            </div>
-
-            <div class="right-side">
-                <div class="side-content">
-                    <p class="copyright">
-                        © 2021 jeffreyallanbrown </p>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-
-</div>
-
+    <div data-anchor="page2" class="pp-scrollable section section-2">
+      <div class="scroll-wrap">
+        <div class="scrollable-content">
+          <div class="vertical-title text-white d-none d-lg-block">
+            <span>what I do</span>
+          </div>
+          <div class="vertical-centred">
+            <div class="boxed boxed-inner">
+              <div class="boxed">
+                <div class="container">
+                  <div class="intro">
+                    <h2 class="title mb-5 pb-5">
+                      <span class="text-primary">My</span> specialization
+                    </h2>
+                    <div class="row-specialization row">
+                      <div class="col-specialization col-md-6 col-lg-4">
+                        <span
+                          class="icon-specialization icon-laptop-phone"
+                        ></span>
+                        <h4 class="text-uppercase">Mobile Design</h4>
+                        <p>
+                          Working with client and community, we deliver
+                          masterplans that create vibrant new places and spaces,
+                          attract people, and encourage investment through.
+                        </p>
+                      </div>
+                      <div class="col-specialization col-md-6 col-lg-4">
+                        <span
+                          class="icon-specialization icon-smartphone-embed"
+                        ></span>
+                        <h4 class="text-uppercase">Coding</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Rerum fuga dicta voluptatum hic aut aspernatur
+                          magnam voluptates itaque atque quae laudantium,
+                          tempora at.
+                        </p>
+                      </div>
+                      <div class="col-specialization col-md-6 col-lg-4">
+                        <span class="icon-specialization icon-diamond2"></span>
+                        <h4 class="text-uppercase">Illustration</h4>
+                        <p>
+                          Working with client and community, we deliver
+                          masterplans that create vibrant new places and spaces,
+                          attract people, and encourage investment through.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="view-all">
+                      <a href="#"> Download resume </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-anchor="page3" class="pp-scrollable text-white section section-3">
+      <div class="scroll-wrap">
+        <div
+          class="section-bg mask"
+          style="background-image: url()"
+        ></div>
+        <div class="scrollable-content">
+          <div class="vertical-title d-none d-lg-block">
+            <span>resume</span>
+          </div>
+          <div class="vertical-centred">
+            <div class="boxed boxed-inner">
+              <div class="boxed">
+                <div class="container">
+                  <div class="intro">
+                    <div class="row row-resume">
+                      <div class="col-md-6 fadeY fadeY-1">
+                        <h2 class="resume-header title">Education</h2>
+                        <div class="col-resume">
+                          <div class="resume-content">
+                            <div class="resume-inner">
+                              <div class="resume-row">
+                                <h6 class="resume-type">
+                                  Specialization course
+                                </h6>
+                                <i class="resume-study"
+                                  >University of studies, Poland, Cracow<br />Jan
+                                  2004 - Dec 2006</i
+                                >
+                                <p class="resume-text">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Minus nobis animi assumenda
+                                  sint recusandae! Dolor placeat debitis animi
+                                  illum quo repellendus pariatur, enim
+                                </p>
+                              </div>
+                              <div class="resume-row">
+                                <h6 class="resume-type">Academy course</h6>
+                                <i class="resume-study"
+                                  >University of studies, Poland, Cracow<br />Jan
+                                  2004 - Dec 2006</i
+                                >
+                                <p class="resume-text">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Minus nobis animi assumenda
+                                  sint recusandae! Dolor placeat debitis animi
+                                  illum quo repellendus pariatur, enim
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 pt-md-5 mt-md-5 fadeY fadeY-2">
+                        <h2 class="resume-header title">Experience</h2>
+                        <div class="col-resume">
+                          <div class="resume-content">
+                            <div class="resume-inner">
+                              <div class="resume-row">
+                                <h6 class="resume-type">
+                                  WEBDESIGNER & FRONT-END
+                                </h6>
+                                <i class="resume-study"
+                                  >University of studies, Poland, Cracow<br />Jan
+                                  2004 - Dec 2006</i
+                                >
+                                <p class="resume-text">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Minus nobis animi assumenda
+                                  sint recusandae! Dolor placeat debitis animi
+                                  illum quo repellendus pariatur, enim
+                                </p>
+                              </div>
+                              <div class="resume-row">
+                                <h6 class="resume-type">WORDPRESS DEVELOPER</h6>
+                                <i class="resume-study"
+                                  >University of studies, Poland, Cracow<br />Jan
+                                  2004 - Dec 2006</i
+                                >
+                                <p class="resume-text">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Minus nobis animi assumenda
+                                  sint recusandae! Dolor placeat debitis animi
+                                  illum quo repellendus pariatur, enim
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-anchor="page4" class="pp-scrollable section section-4">
+      <div class="scroll-wrap">
+        <div
+          class="section-bg bg-about"
+          style="background-image: url()"
+        ></div>
+        <div class="scrollable-content">
+          <div class="vertical-title text-white d-none d-lg-block">
+            <span>about us</span>
+          </div>
+          <div class="vertical-centred">
+            <div class="boxed boxed-inner">
+              <div class="boxed">
+                <div class="container">
+                  <div class="intro">
+                    <div class="row align-items-center">
+                      <div class="col-lg-6 offset-xl-1">
+                        <div class="experience-box">
+                          <div class="experience-content">
+                            <div class="experience-number">4</div>
+                            <div class="experience-info">
+                              <div>Years<br />Experience<br />Working</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-5 mt-5 mt-xl-0">
+                        <h2 class="title">
+                          <span class="text-primary">The best</span> websites
+                        </h2>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Accusantium dicta sit pariatur odio unde deleniti
+                        eveniet.
+                        <div class="progress-bars">
+                          <div class="clearfix">
+                            <div class="number float-left">Mobile Design</div>
+                            <div class="number float-right">80%</div>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar-wrp">
+                              <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 80%"
+                                aria-valuenow="0"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="clearfix">
+                            <div class="number float-left">Coding</div>
+                            <div class="number float-right">70%</div>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar-wrp">
+                              <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 70%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="clearfix">
+                            <div class="number float-left">Illustration</div>
+                            <div class="number float-right">70%</div>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar-wrp">
+                              <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 70%"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-anchor="page5" class="pp-scrollable text-white section section-5">
+      <div class="scroll-wrap">
+        <div class="bg-changer">
+          <div
+            class="section-bg"
+            style="background-image: url()"
+          ></div>
+          <div
+            class="section-bg"
+            style="background-image: url()"
+          ></div>
+          <div
+            class="section-bg"
+            style="background-image: url()"
+          ></div>
+          <div
+            class="section-bg"
+            style="background-image: url()"
+          ></div>
+        </div>
+        <div class="scrollable-content">
+          <div class="vertical-title d-none d-lg-block">
+            <span>my works</span>
+          </div>
+          <div class="vertical-centred">
+            <div class="boxed boxed-inner">
+              <div class="boxed">
+                <div class="container">
+                  <div class="intro">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="project-row">
+                          <a class="active" href="project-detail.html">
+                            <span class="project-number">01</span>
+                            <h2 class="project-title">Abstract Skat</h2>
+                            <div class="project-category">Illustration</div>
+                          </a>
+                        </div>
+                        <div class="project-row">
+                          <a href="project-detail.html">
+                            <span class="project-number">02</span>
+                            <h2 class="project-title">Borato Prism</h2>
+                            <div class="project-category">Branding</div>
+                          </a>
+                        </div>
+                        <div class="project-row">
+                          <a href="project-detail.html">
+                            <span class="project-number">03</span>
+                            <h2 class="project-title">Brole Mobile App</h2>
+                            <div class="project-category">Mobile Design</div>
+                          </a>
+                        </div>
+                        <div class="project-row">
+                          <a href="project-detail.html">
+                            <span class="project-number">04</span>
+                            <h2 class="project-title">Bauhaus Studio</h2>
+                            <div class="project-category">House Design</div>
+                          </a>
+                        </div>
+                        <div class="view-all view-all-projects">
+                          <a href="projects.html"> View all projects </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-anchor="page6" class="pp-scrollable section section-6">
+      <div class="scroll-wrap">
+        <div class="scrollable-content">
+          <div class="vertical-title text-white d-none d-lg-block">
+            <span>partners</span>
+          </div>
+          <div class="vertical-centred">
+            <div class="boxed boxed-inner">
+              <div class="boxed">
+                <div class="container">
+                  <div class="intro">
+                    <h2 class="title text-white">
+                      <span class="text-primary">Trusted</span> from Clients
+                    </h2>
+                    <div class="row row-partners">
+                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                        <div class="partner-inner">
+                          <img alt="" src="" />
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                        <div class="partner-inner">
+                          <img alt="" src="" />
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                        <div class="partner-inner">
+                          <img alt="" src="" />
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                        <div class="partner-inner">
+                          <img alt="" src="" />
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                        <div class="partner-inner">
+                          <img alt="" src="" />
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                        <div class="partner-inner">
+                          <img alt="" src="" />
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                        <div class="partner-inner">
+                          <img alt="" src="" />
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                        <div class="partner-inner">
+                          <img alt="" src="" />
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                        <div class="partner-inner">
+                          <img alt="" src="" />
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                        <div class="partner-inner">
+                          <img alt="" src="" />
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                        <div class="partner-inner">
+                          <img alt="" src="" />
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
+                        <div class="partner-inner">
+                          <img alt="" src="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-anchor="page7" class="pp-scrollable text-white section section-7">
+      <div class="scroll-wrap">
+        <div
+          class="section-bg"
+          style="background-image: url()"
+        ></div>
+        <div class="bg-quote"></div>
+        <div class="scrollable-content">
+          <div class="vertical-title d-none d-lg-block">
+            <span>testimonials</span>
+          </div>
+          <div class="vertical-centred">
+            <div class="boxed boxed-inner">
+              <div class="boxed">
+                <div class="container">
+                  <div class="intro">
+                    <div class="review-carousel owl-carousel">
+                      <div class="review-carousel-item">
+                        <div class="review-row">
+                          <div class="row">
+                            <div class="col-md-5">
+                              <div class="review-author">
+                                <div class="author-name">David & Elisa</div>
+                                <i>Apartment view lake at Brooklyn</i>
+                              </div>
+                            </div>
+                            <div class="col-md-7 text">
+                              <p>
+                                If you are seeking an Interior designer that
+                                will understand exactly your needs, and someone
+                                who will utilise their creative and technical
+                                skills in parity with your taste, then Suzanne
+                                at The Ramsay Studio is perfect.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="review-row">
+                          <div class="row">
+                            <div class="col-md-5">
+                              <div class="review-author">
+                                <div class="author-name">Amanda</div>
+                                <i>Apartment view lake at Brooklyn</i>
+                              </div>
+                            </div>
+                            <div class="col-md-7 text">
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Odio dolorem reiciendis
+                                doloremque veniam perspiciatis quam velit
+                                pariatur eius, repellendus dolores eveniet
+                                maiores sed. Quod quam minus dolore sed cumque
+                                aliquid.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="review-carousel-item">
+                        <div class="review-row">
+                          <div class="row">
+                            <div class="col-md-5">
+                              <div class="review-author">
+                                <div class="author-name">David & Elisa</div>
+                                <i>Apartment view lake at Brooklyn</i>
+                              </div>
+                            </div>
+                            <div class="col-md-7 text">
+                              <p>
+                                If you are seeking an Interior designer that
+                                will understand exactly your needs, and someone
+                                who will utilise their creative and technical
+                                skills in parity with your taste, then Suzanne
+                                at The Ramsay Studio is perfect.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="review-row">
+                          <div class="row">
+                            <div class="col-md-5">
+                              <div class="review-author">
+                                <div class="author-name">Amanda</div>
+                                <i>Apartment view lake at Brooklyn</i>
+                              </div>
+                            </div>
+                            <div class="col-md-7 text">
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Odio dolorem reiciendis
+                                doloremque veniam perspiciatis quam velit
+                                pariatur eius, repellendus dolores eveniet
+                                maiores sed. Quod quam minus dolore sed cumque
+                                aliquid.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="review-carousel-item">
+                        <div class="review-row">
+                          <div class="row">
+                            <div class="col-md-5">
+                              <div class="review-author">
+                                <div class="author-name">David & Elisa</div>
+                                <i>Apartment view lake at Brooklyn</i>
+                              </div>
+                            </div>
+                            <div class="col-md-7 text">
+                              <p>
+                                If you are seeking an Interior designer that
+                                will understand exactly your needs, and someone
+                                who will utilise their creative and technical
+                                skills in parity with your taste, then Suzanne
+                                at The Ramsay Studio is perfect.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="review-row">
+                          <div class="row">
+                            <div class="col-md-5">
+                              <div class="review-author">
+                                <div class="author-name">Amanda</div>
+                                <i>Apartment view lake at Brooklyn</i>
+                              </div>
+                            </div>
+                            <div class="col-md-7 text">
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Odio dolorem reiciendis
+                                doloremque veniam perspiciatis quam velit
+                                pariatur eius, repellendus dolores eveniet
+                                maiores sed. Quod quam minus dolore sed cumque
+                                aliquid.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-anchor="page8" class="pp-scrollable section section-8">
+      <div class="scroll-wrap">
+        <div
+          class="section-bg"
+          style="background-image: url()"
+        ></div>
+        <div class="scrollable-content">
+          <div class="vertical-title text-white d-none d-lg-block">
+            <span>contact</span>
+          </div>
+          <div class="vertical-centred">
+            <div class="boxed boxed-inner">
+              <div class="boxed">
+                <div class="container">
+                  <div class="intro overflow-hidden">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h2 class="title">
+                          <span class="text-primary">New York</span>, USA
+                        </h2>
+                        <h5 class="text-muted">
+                          166 Main Street, Beverly Hills, CA 90210
+                        </h5>
+                        <section class="contact-address">
+                          <h3>
+                            <a class="mail" href="mailto:contact@ramsay.com">
+                              contact@ramsay.com</a
+                            >
+                          </h3>
+                          <h3><span class="phone">+96 56-85-1379</span></h3>
+                        </section>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="contact-info">
+                          <form class="js-form" novalidate="novalidate">
+                            <div class="row">
+                              <div class="form-group col-sm-6">
+                                <input
+                                  type="text"
+                                  name="name"
+                                  required=""
+                                  placeholder="Name*"
+                                  aria-required="true"
+                                />
+                              </div>
+                              <div class="form-group col-sm-6">
+                                <input
+                                  type="email"
+                                  required=""
+                                  name="email"
+                                  placeholder="Email*"
+                                />
+                              </div>
+                              <div class="form-group col-sm-12">
+                                <input
+                                  type="text"
+                                  name="subject"
+                                  placeholder="Subject (Optinal)"
+                                />
+                              </div>
+                              <div class="form-group col-sm-12">
+                                <textarea
+                                  name="message"
+                                  required=""
+                                  placeholder="Message*"
+                                ></textarea>
+                              </div>
+                              <div
+                                class="form-group form-group-message col-sm-12"
+                              >
+                                <span id="success" class="text-primary"
+                                  >Thank You, your message is successfully
+                                  sent!</span
+                                >
+                                <span id="error" class="text-primary"
+                                  >Sorry, something went wrong
+                                </span>
+                              </div>
+                              <div class="col-sm-12">
+                                <button type="submit" class="btn">
+                                  Contact me
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-
 export default {
-  data: function() {
-    return {
-    }
+  data: function () {
+    return {}
   },
-  props: [
-  ],
-  methods: {
-  },
-  beforeCreate() {
-    let mainScript = document.createElement('script')
-    let jqueryScript = document.createElement('script')
-    
-    jqueryScript.setAttribute('src', './src/assets/js/jquery-3.1.1.min.js')
-    mainScript.setAttribute('src', './src/assets/js/main.js')
-    
-    document.body.appendChild(jqueryScript)
-    document.body.appendChild(mainScript)
-    
-  }
+  props: [],
+  methods: {},
 }
 </script>
