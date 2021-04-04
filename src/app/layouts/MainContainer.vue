@@ -1,11 +1,11 @@
 <template>
-  <div class="loader">
+<!--   <div class="loader">
     <div class="spinner">
       <div class="double-bounce1"></div>
       <div class="double-bounce2"></div>
     </div>
   </div>
-  <div class="click-capture"></div>
+  <div class="click-capture"></div> -->
 
   <!-- Sidebar Menu-->
   <div class="menu">
@@ -14,32 +14,30 @@
       <li data-menuanchor="page1">
         <a href="#page1">Home</a>
       </li>
-      <li data-menuanchor="page2">
+      <!-- <li data-menuanchor="page2">
         <a href="#page2">Specialization</a>
-      </li>
-      <li data-menuanchor="page3">
+      </li> -->
+      <!-- <li data-menuanchor="page3">
         <a href="#page3">Resume</a>
-      </li>
-      <li data-menuanchor="page4">
+      </li> -->
+      <!-- <li data-menuanchor="page4">
         <a href="#page4">About</a>
+      </li> -->
+      <li data-menuanchor="page2">
+        <a href="#page2">Projects</a>
       </li>
-      <li data-menuanchor="page5">
-        <a href="#page5">Projects</a>
-      </li>
-      <li data-menuanchor="page7">
+      <!-- <li data-menuanchor="page7">
         <a href="#page7">Testimonials</a>
-      </li>
-      <li data-menuanchor="page8">
+      </li> -->
+      <!-- <li data-menuanchor="page8">
         <a href="#page8">Contact</a>
-      </li>
+      </li> -->
     </ul>
     <div class="menu-footer right-boxed">
       <div class="social-list">
-        <a href="" class="icon ion-social-twitter"></a>
-        <a href="" class="icon ion-social-facebook"></a>
-        <a href="" class="icon ion-social-googleplus"></a>
-        <a href="" class="icon ion-social-linkedin"></a>
-        <a href="" class="icon ion-social-dribbble-outline"></a>
+        <a href="https://github.com/hieronymous-bean" class="icon ion-social-github" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/jeffreyallanbrown/" class="icon ion-social-linkedin" target="_blank"></a>
+        <a href="https://dribbble.com/hieronymous-bean" class="icon ion-social-dribbble-outline" target="_blank"></a>
       </div>
       <div class="copy">© jeffreyallanbrown 2021. All Rights Reseverd</div>
     </div>
@@ -49,9 +47,9 @@
   <header class="navbar navbar-fullpage boxed">
     <div class="navbar-bg"></div>
     <a class="brand" href="#">
-      <img alt="" src="" />
+      <img alt="" src=""/>
       <div class="brand-info">
-        <div class="brand-name">jeffreyallanbrown</div>
+        <div class="brand-name"></div>
       </div>
     </a>
 
@@ -68,7 +66,10 @@
     </button>
 
     <div class="contacts d-none d-md-block">
-      <div class="contact-item">440-650-7114</div>
+      <div class="contact-item">
+        <a href="mailto:jeffreybrown7193@gmail.com"
+          >jeffreybrown7193@gmail.com</a
+        ></div>
       <div class="contact-item spacer">/</div>
       <div class="contact-item">
         <a href="mailto:jeffrey@jeffreyallanbrown.com"
@@ -79,18 +80,15 @@
   </header>
   <div class="copy-bottom white boxed">© jeffreyallanbrown 2021</div>
   <div class="social-list social-list-bottom boxed">
-    <a href="" class="icon ion-social-twitter"></a>
-    <a href="" class="icon ion-social-facebook"></a>
-    <a href="" class="icon ion-social-googleplus"></a>
-    <a href="" class="icon ion-social-linkedin"></a>
-    <a href="" class="icon ion-social-dribbble-outline"></a>
+    <a href="https://github.com/hieronymous-bean" class="icon ion-social-github" target="_blank"></a>
+    <a href="https://www.linkedin.com/in/jeffreyallanbrown/" class="icon ion-social-linkedin" target="_blank"></a>
+    <a href="https://dribbble.com/hieronymous-bean" class="icon ion-social-dribbble-outline" target="_blank"></a>
   </div>
   <div class="pagepiling">
     <div data-anchor="page1" class="pp-scrollable text-white section section-1">
       <div class="scroll-wrap">
         <div
-          class="section-bg"
-          style="background-image: url()"
+          class="section-bg main-bg"
         ></div>
         <div class="scrollable-content">
           <div class="vertical-centred">
@@ -99,18 +97,8 @@
                 <div class="container">
                   <div class="intro">
                     <div class="row">
-                      <div class="col-md-8 col-lg-6">
-                        <h1
-                          class="display-2 text-white wow fadeIn"
-                          data-wow-delay="0.1s"
-                        >
-                          <span class="text-primary">Hi,</span> I'm Jeffrey
-                        </h1>
-                        <a
-                          class="popup-youtube"
-                          href=""
-                          ><span class="icon ion-ios-play"></span>Watch video
-                        </a>
+                      <div class="col-md-8 col-lg-10">
+                        <h1 class="display-3">Hi. I'm a <div class="display-2">Full-Stack Web Developer</div></h1>
                       </div>
                     </div>
                   </div>
@@ -121,7 +109,7 @@
         </div>
       </div>
     </div>
-    <div data-anchor="page2" class="pp-scrollable section section-2">
+    <!-- <div data-anchor="page2" class="pp-scrollable section section-2">
       <div class="scroll-wrap">
         <div class="scrollable-content">
           <div class="vertical-title text-white d-none d-lg-block">
@@ -179,8 +167,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div data-anchor="page3" class="pp-scrollable text-white section section-3">
+    </div> -->
+    <!-- <div data-anchor="page3" class="pp-scrollable text-white section section-3">
       <div class="scroll-wrap">
         <div
           class="section-bg mask"
@@ -188,7 +176,7 @@
         ></div>
         <div class="scrollable-content">
           <div class="vertical-title d-none d-lg-block">
-            <span>resume</span>
+            <span>What I've Done</span>
           </div>
           <div class="vertical-centred">
             <div class="boxed boxed-inner">
@@ -278,8 +266,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div data-anchor="page4" class="pp-scrollable section section-4">
+    </div> -->
+    <!-- <div data-anchor="page4" class="pp-scrollable section section-4">
       <div class="scroll-wrap">
         <div
           class="section-bg bg-about"
@@ -371,30 +359,26 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div data-anchor="page5" class="pp-scrollable text-white section section-5">
       <div class="scroll-wrap">
         <div class="bg-changer">
           <div
-            class="section-bg"
-            style="background-image: url()"
+            class="section-bg project-1-bg"
           ></div>
           <div
-            class="section-bg"
-            style="background-image: url()"
+            class="section-bg project-2-bg"
           ></div>
           <div
-            class="section-bg"
-            style="background-image: url()"
+            class="section-bg project-3-bg"
           ></div>
           <div
-            class="section-bg"
-            style="background-image: url()"
+            class="section-bg project-4-bg"
           ></div>
         </div>
         <div class="scrollable-content">
           <div class="vertical-title d-none d-lg-block">
-            <span>my works</span>
+            <span>Projects</span>
           </div>
           <div class="vertical-centred">
             <div class="boxed boxed-inner">
@@ -404,35 +388,35 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="project-row">
-                          <a class="active" href="project-detail.html">
+                          <a class="active" href="https://github.com/hieronymous-bean/borges" target="_blank">
                             <span class="project-number">01</span>
-                            <h2 class="project-title">Abstract Skat</h2>
-                            <div class="project-category">Illustration</div>
+                            <h2 class="project-title">Borges</h2>
+                            <div class="project-category">Web Application</div>
                           </a>
                         </div>
                         <div class="project-row">
-                          <a href="project-detail.html">
+                          <a href="https://github.com/hieronymous-bean/doughnet" target="_blank">
                             <span class="project-number">02</span>
-                            <h2 class="project-title">Borato Prism</h2>
-                            <div class="project-category">Branding</div>
+                            <h2 class="project-title">Doughnet</h2>
+                            <div class="project-category">Web Application</div>
                           </a>
                         </div>
                         <div class="project-row">
-                          <a href="project-detail.html">
+                          <a href="https://github.com/hieronymous-bean/celestial-bodies" target="_blank">
                             <span class="project-number">03</span>
-                            <h2 class="project-title">Brole Mobile App</h2>
-                            <div class="project-category">Mobile Design</div>
+                            <h2 class="project-title">Celestial Bodies</h2>
+                            <div class="project-category">API Wrapper</div>
                           </a>
                         </div>
                         <div class="project-row">
-                          <a href="project-detail.html">
+                          <a href="https://github.com/hieronymous-bean/urchin" target="_blank">
                             <span class="project-number">04</span>
-                            <h2 class="project-title">Bauhaus Studio</h2>
-                            <div class="project-category">House Design</div>
+                            <h2 class="project-title">Urchin</h2>
+                            <div class="project-category">UI Library</div>
                           </a>
                         </div>
                         <div class="view-all view-all-projects">
-                          <a href="projects.html"> View all projects </a>
+                          <a href="https://github.com/hieronymous-bean?tab=repositories" target="_blank"> View all projects </a>
                         </div>
                       </div>
                     </div>
@@ -444,7 +428,7 @@
         </div>
       </div>
     </div>
-    <div data-anchor="page6" class="pp-scrollable section section-6">
+    <!-- <div data-anchor="page6" class="pp-scrollable section section-6">
       <div class="scroll-wrap">
         <div class="scrollable-content">
           <div class="vertical-title text-white d-none d-lg-block">
@@ -527,8 +511,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div data-anchor="page7" class="pp-scrollable text-white section section-7">
+    </div> -->
+    <!-- <div data-anchor="page7" class="pp-scrollable text-white section section-7">
       <div class="scroll-wrap">
         <div
           class="section-bg"
@@ -676,8 +660,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div data-anchor="page8" class="pp-scrollable section section-8">
+    </div> -->
+    <!-- <div data-anchor="page8" class="pp-scrollable section section-8">
       <div class="scroll-wrap">
         <div
           class="section-bg"
@@ -772,7 +756,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

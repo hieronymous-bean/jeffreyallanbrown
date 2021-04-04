@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = ({
-  mode: 'development',
+  mode: 'production',
   entry: {
     primary: './src/main.js'
   },
@@ -38,17 +38,15 @@ module.exports = ({
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         loader: 'file-loader',
         options: {
-          outputPath: 'images',
+          name: 'images/[contenthash].[ext]',
         },
-        type: 'asset/resource',
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        loader: 'file-loader',
+        loader: 'url-loader',
         options: {
-          outputPath: 'fonts',
-        },
-        type: 'asset/inline',
+          outputPath: '/fonts',
+        }
       },
     ]
   },

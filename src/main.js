@@ -7,6 +7,7 @@ import 'bootstrap'
 import './assets/css/style.css'
 import './assets/js/scripts.js'
 
+
 const app = createApp(App)
 
 app.use(router)
