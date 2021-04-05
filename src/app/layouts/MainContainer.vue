@@ -1,11 +1,11 @@
 <template>
-<!--   <div class="loader">
+  <div class="loader">
     <div class="spinner">
       <div class="double-bounce1"></div>
       <div class="double-bounce2"></div>
     </div>
   </div>
-  <div class="click-capture"></div> -->
+  <div class="click-capture"></div>
 
   <!-- Sidebar Menu-->
   <div class="menu">
@@ -39,7 +39,7 @@
         <a href="https://www.linkedin.com/in/jeffreyallanbrown/" class="icon ion-social-linkedin" target="_blank"></a>
         <a href="https://dribbble.com/hieronymous-bean" class="icon ion-social-dribbble-outline" target="_blank"></a>
       </div>
-      <div class="copy">© jeffreyallanbrown 2021. All Rights Reseverd</div>
+      <div class="copy">©2021 jeffreyallanbrown. All Rights Reseverd</div>
     </div>
   </div>
 
@@ -78,14 +78,14 @@
       </div>
     </div>
   </header>
-  <div class="copy-bottom white boxed">© jeffreyallanbrown 2021</div>
+  <div class="copy-bottom white boxed">©2021 jeffreyallanbrown</div>
   <div class="social-list social-list-bottom boxed">
     <a href="https://github.com/hieronymous-bean" class="icon ion-social-github" target="_blank"></a>
     <a href="https://www.linkedin.com/in/jeffreyallanbrown/" class="icon ion-social-linkedin" target="_blank"></a>
     <a href="https://dribbble.com/hieronymous-bean" class="icon ion-social-dribbble-outline" target="_blank"></a>
   </div>
   <div class="pagepiling">
-    <div data-anchor="page1" class="pp-scrollable text-white section section-1">
+    <div data-anchor="page1" class="pp-scrollable text-black section section-1">
       <div class="scroll-wrap">
         <div
           class="section-bg main-bg"
