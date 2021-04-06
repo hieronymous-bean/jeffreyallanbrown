@@ -1,771 +1,485 @@
 <template>
-  <div class="loader">
-    <div class="spinner">
-      <div class="double-bounce1"></div>
-      <div class="double-bounce2"></div>
-    </div>
-  </div>
-  <div class="click-capture"></div>
+<div>
 
-  <!-- Sidebar Menu-->
-  <div class="menu">
-    <span class="close-menu icon-cross2 right-boxed"></span>
-    <ul class="menu-list right-boxed">
-      <li data-menuanchor="page1">
-        <a href="#page1">Home</a>
-      </li>
-      <!-- <li data-menuanchor="page2">
-        <a href="#page2">Specialization</a>
-      </li> -->
-      <!-- <li data-menuanchor="page3">
-        <a href="#page3">Resume</a>
-      </li> -->
-      <!-- <li data-menuanchor="page4">
-        <a href="#page4">About</a>
-      </li> -->
-      <li data-menuanchor="page2">
-        <a href="#page2">Projects</a>
-      </li>
-      <!-- <li data-menuanchor="page7">
-        <a href="#page7">Testimonials</a>
-      </li> -->
-      <!-- <li data-menuanchor="page8">
-        <a href="#page8">Contact</a>
-      </li> -->
-    </ul>
-    <div class="menu-footer right-boxed">
-      <div class="social-list">
-        <a href="https://github.com/hieronymous-bean" class="icon ion-social-github" target="_blank"></a>
-        <a href="https://www.linkedin.com/in/jeffreyallanbrown/" class="icon ion-social-linkedin" target="_blank"></a>
-        <a href="https://dribbble.com/hieronymous-bean" class="icon ion-social-dribbble-outline" target="_blank"></a>
-      </div>
-      <div class="copy">©2021 jeffreyallanbrown. All Rights Reseverd</div>
+<!--   <div class="waxon_tm_preloader">
+    <div class="spinner_wrap">
+      <div class="spinner"></div>
     </div>
-  </div>
+  </div> -->
 
-  <!-- Navbar -->
-  <header class="navbar navbar-fullpage boxed">
-    <div class="navbar-bg"></div>
-    <a class="brand" href="#">
-      <img alt="" src=""/>
-      <div class="brand-info">
-        <div class="brand-name"></div>
-      </div>
-    </a>
+  <div class="waxon_tm_all_wrap">
 
-    <button
-      type="button"
-      class="navbar-toggle"
-      data-toggle="collapse"
-      data-target="#navbar-collapse"
-      aria-expanded="false"
-    >
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
+    <div class="waxon_tm_topbar">
+      <div class="container">
+        <div class="topbar_inner">
+          <div class="logo">
+            <a href="#">
+              <img class="light" src="../../assets/img/logo.png" alt="jeffreyallanbrown" />
+            </a>
+          </div>
+          <div class="menu">
+            <div class="links">
+              <ul class="anchor_nav">
+                <li v-for="item in navigation" :key="item">
+                  <a :href="item.url">
+                    <span class="first">{{item.label}}</span>
+                    <span class="second">{{item.label}}</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div class="contacts d-none d-md-block">
-      <div class="contact-item">
-        <a href="mailto:jeffreybrown7193@gmail.com"
-          >jeffreybrown7193@gmail.com</a
-        ></div>
-      <div class="contact-item spacer">/</div>
-      <div class="contact-item">
-        <a href="mailto:jeffrey@jeffreyallanbrown.com"
-          >jeffrey@jeffreyallanbrown.com</a
-        >
+    <div class="waxon_tm_mobile_menu">
+      <div class="topbar_inner">
+        <div class="container bigger">
+          <div class="topbar_in">
+            <div class="logo">
+              <a href="#"><img src="img/logo/dark.png" alt="" /></a>
+            </div>
+            <div class="my_trigger">
+              <div class="hamburger hamburger--collapse-r">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="container">
+          <div class="dropdown_inner">
+            <ul class="anchor_nav">
+              <li v-for="item in navigation" :key="item">
+                <a :href="item.url">{{item.label}}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </header>
-  <div class="copy-bottom white boxed">©2021 jeffreyallanbrown</div>
-  <div class="social-list social-list-bottom boxed">
-    <a href="https://github.com/hieronymous-bean" class="icon ion-social-github" target="_blank"></a>
-    <a href="https://www.linkedin.com/in/jeffreyallanbrown/" class="icon ion-social-linkedin" target="_blank"></a>
-    <a href="https://dribbble.com/hieronymous-bean" class="icon ion-social-dribbble-outline" target="_blank"></a>
+
+    <div class="waxon_tm_hero" id="home">
+      <div class="background">
+        <div class="leftpart">
+        </div>
+        <div class="rightpart">
+          <div class="inner">
+            <div class="image" data-img-url="../../assets/img/bg/black-11.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="content_inner">
+            <div class="name">
+              <h3 class="stroke">Jeffrey</h3>
+              <h3>Brown</h3>
+              <span>Full-Stack Web Developer</span>
+            </div>
+          </div>
+          <div class="waxon_tm_down" data-skin="dark" data-position="">
+            <div class="line_wrapper">
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /HERO -->
+    
+    <!-- ABOUT -->
+    <div class="waxon_tm_about" id="about">
+      <div class="container">
+        <div class="about_inner">
+          <div class="left">
+            <img class="thumbnail" src="https://via.placeholder.com/500" alt="jeffreyallanbrown" />
+          </div>
+          <div class="right">
+            <div class="name">
+              <h3>Jeffrey Brown<span class="bg">About</span></h3>
+              <span>Full-Stack Web Developer</span>
+            </div>
+            <div class="text">
+              <p>I'm a life-long learner with a passion for trying new things and gaining new skills. Empowered by digital technology, I make use of the resources available to me to teach myself how to build useful tools and to interact with the world around me. I love solving problems, and am perpetually seeking out new opportunities to challenge myself and grow both personally and professionally.</p>
+            </div>
+            <div class="waxon_tm_button" data-position="right">
+              <a href="" download>
+                <span>Download Resume</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /ABOUT -->
+    
+    <!-- SERVICES -->
+    <!-- <div class="waxon_tm_service">
+      <div class="container">
+        <div class="service_inner">
+          <ul class="owl-carousel">
+            <li class="item">
+              <div class="list_inner">
+                <img class="svg" src="img/svg/code.svg" alt="" />
+                <div class="details">
+                  <h3>Web Development</h3>
+                  <p>Web design is a similar process of creation, with the intention of presenting...</p>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="list_inner">
+                <img class="svg" src="img/svg/creativity.svg" alt="" />
+                <div class="details">
+                  <h3>Creative Design</h3>
+                  <p>Web design is a similar process of creation, with the intention of presenting...</p>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="list_inner">
+                <img class="svg" src="img/svg/telegram.svg" alt="" />
+                <div class="details">
+                  <h3>Brand Identity</h3>
+                  <p>Web design is a similar process of creation, with the intention of presenting...</p>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <div class="list_inner">
+                <img class="svg" src="img/svg/photoshop.svg" alt="" />
+                <div class="details">
+                  <h3>Adobe Photoshop</h3>
+                  <p>Web design is a similar process of creation, with the intention of presenting...</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+    <!-- /SERVICES -->
+    
+    <!-- PORTFOLIO -->
+    <div class="waxon_tm_portoflio" id="portfolio">
+      <div class="container">
+        <div class="waxon_tm_main_title">
+          <div class="title">
+            <h3>Featured Projects<span class="bg">Projects</span></h3>
+          </div>
+          <div class="portfolio_filter">
+            <ul>
+              <li>
+                <a href="#" class="current" data-filter="*">
+                  <span class="first">Category</span>
+                  <span class="second">Category</span>
+                </a>
+              </li>
+            </ul>
+            <div class="wrapper">
+              <a href="#"><span class="trigger"></span></a>
+            </div>          
+          </div>
+        </div>
+        <div class="portfolio_inner">
+          <ul class="gallery_zoom">
+
+            <li v-for="project in projects" :key="project" class="">
+              <div class="list_inner">
+                <div class="image">
+                  <img src="img/portfolio/1-1.jpg" alt="" />
+                  <div class="main" data-img-url="img/portfolio/7.jpg"></div>
+                  <div class="overlay">
+                    <img class="myimage" src="img/youtube.png" alt="" />
+                  </div>
+                  <a class="full_link popup-youtube" href="https://www.youtube.com/watch?v=iIrSCm_0Sj4"></a>
+                </div>
+                <div class="title">
+                  <h3><a href="#">{{ project.name }}</a></h3>
+                  <span><a href="#">YouTube</a></span>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="waxon_tm_button" data-position="center">
+        <a href="portfolio.html">
+          <span>View All Works</span>
+        </a>
+      </div>
+    </div>
+    <!-- /PORTFOLIO -->
+    
+    <!-- PARTNERS -->
+    <!-- <div class="waxon_tm_partners">
+      <div class="container">
+        <div class="partners_inner">
+          <ul>
+            <li>
+              <div class="list_inner">
+                <img src="img/partners/1.png" alt="" />
+                <a class="full_link" a href="#"></a>
+              </div>
+            </li>
+            <li>
+              <div class="list_inner">
+                <img src="img/partners/2.png" alt="" />
+                <a class="full_link" a href="#"></a>
+              </div>
+            </li>
+            <li>
+              <div class="list_inner">
+                <img src="img/partners/3.png" alt="" />
+                <a class="full_link" a href="#"></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+    <!-- /PARTNERS -->
+    
+    <!-- TESTIMONIALS -->
+    <!-- <div class="waxon_tm_testimonials">
+      <div class="container">
+        <div class="waxon_tm_main_title">
+          <div class="title">
+            <h3>What Clients Say<span class="bg">Testimonial</span></h3>
+          </div>
+        </div>
+        <div class="testi_inner">
+          <div class="left">
+            <div class="quote_list">
+              <ul>
+                <li class="active">
+                  <img class="svg" src="img/svg/quote-1.svg" alt="" />
+                  <p class="text">Good overall template. I am getting back into coding and had a simple question for the author. They responded within 30 minutes and answered my question. Highly recommend.</p>
+                  <div class="details">
+                    <div class="image">
+                      <div class="main" data-img-url="img/about/1.jpg"></div>
+                    </div>
+                    <div class="short">
+                      <h3 class="author"><span>Nelly Furtado</span></h3>
+                      <h3 class="job"><span>App Developer</span></h3>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <div class="image_list">
+              <ul class="masonry">
+                <li class="active masonry_item">
+                  <div class="image">
+                    <img src="img/portfolio/3-4.jpg" alt="" />
+                    <div class="main" data-img-url="img/about/1.jpg"></div>
+                  </div>
+                </li>
+                <li class="masonry_item">
+                  <div class="image">
+                    <img src="img/portfolio/4-3.jpg" alt="" />
+                    <div class="main" data-img-url="img/about/2.jpg"></div>
+                  </div>
+                </li>
+                <li class="masonry_item">
+                  <div class="image">
+                    <img src="img/portfolio/1-1.jpg" alt="" />
+                    <div class="main" data-img-url="img/about/3.jpg"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- /TESTIMONIALS -->
+    
+    <!-- NEWS -->
+    <!-- <div class="waxon_tm_news" id="news">
+      <div class="container">
+        <div class="waxon_tm_main_title">
+          <div class="title">
+            <h3>Latest News<span class="bg">News</span></h3>
+          </div>
+        </div>
+        <div class="news_inner">
+          <ul>
+            <li>
+              <div class="list_inner">
+                <div class="image">
+                  <img src="img/portfolio/4-3.jpg" alt="" />
+                  <div class="main" data-img-url="img/news/1.jpg"></div>
+                  <a class="full_link" a href="news-single.html"></a>
+                </div>
+                <div class="details">
+                  <h3 class="title"><a href="news-single.html">What is the Difference between Web and Brand Design</a></h3>
+                  <div class="waxon_tm_read_more">
+                    <a href="news-single.html">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+    <!-- /NEWS -->
+    
+    <!-- CONTACT -->
+    <div class="waxon_tm_contact" id="contact">
+      <div class="bg_image"></div>
+      <div class="container">
+        <div class="contact_inner">
+          <div class="waxon_tm_main_title">
+            <div class="title">
+              <h3>Get in Touch<span class="bg">Contact</span></h3>
+            </div>
+          </div>
+          <div class="desc">
+            <p>Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p>
+          </div>
+          <div class="wrapper">
+            <div class="left">
+              <div class="fields">
+                <form action="/" method="post" class="contact_form" id="contact_form">
+                  <div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
+                  <div class="empty_notice"><span>Please Fill Required Fields</span></div>
+                  <div class="first">
+                    <ul>
+                      <li>
+                        <input id="name" type="text" placeholder="Name">
+                      </li>
+                      <li>
+                        <input id="email" type="text" placeholder="Email">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="last">
+                    <textarea id="message" placeholder="Message"></textarea>
+                  </div>
+                  <div class="waxon_tm_button" data-position="left">
+                    <a id="send_message" href="#">
+                      <span>Send Message</span>
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="right">
+              <div class="map_wrap">
+                <div class="map" id="ieatmaps"></div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /CONTACT -->
+    
+    <!-- COPYRIGHT -->
+    <div class="waxon_tm_copyright">
+      <div class="container">
+        <div class="copyright_inner">
+          <ul>
+            <li class="wow fadeInDown" data-wow-duration="0.8s">
+              <span>WAXON</span>
+              <span>PORTFOLIO TEMPLATE</span>
+            </li>
+            <li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.2s">
+              <span>Brook 103,</span>
+              <span>90021 New York, USA</span>
+            </li>
+            <li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.4s">
+              <span><a href="#">hi@waxon.com</a></span>
+              <span>+77 033 442 55 57</span>
+            </li>
+            <li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+              <div class="social">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <span class="first"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></span>
+                      <span class="second"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="first"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></span>
+                      <span class="second"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="first"><img class="svg" src="img/svg/social/instagram.svg" alt="" /></span>
+                      <span class="second"><img class="svg" src="img/svg/social/instagram.svg" alt="" /></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="first"><img class="svg" src="img/svg/social/soundcloud.svg" alt="" /></span>
+                      <span class="second"><img class="svg" src="img/svg/social/soundcloud.svg" alt="" /></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="first"><img class="svg" src="img/svg/social/youtube.svg" alt="" /></span>
+                      <span class="second"><img class="svg" src="img/svg/social/youtube.svg" alt="" /></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="first"><img class="svg" src="img/svg/social/vk.svg" alt="" /></span>
+                      <span class="second"><img class="svg" src="img/svg/social/vk.svg" alt="" /></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /COPYRIGHT -->
+    
+    <!-- CURSOR -->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+    <!-- /CURSOR -->
   </div>
-  <div class="pagepiling">
-    <div data-anchor="page1" class="pp-scrollable text-black section section-1">
-      <div class="scroll-wrap">
-        <div
-          class="section-bg main-bg"
-        ></div>
-        <div class="scrollable-content">
-          <div class="vertical-centred">
-            <div class="boxed boxed-inner">
-              <div class="boxed">
-                <div class="container">
-                  <div class="intro">
-                    <div class="row">
-                      <div class="col-md-8 col-lg-10">
-                        <h1 class="display-3">Hi. I'm a <div class="display-2">Full-Stack Web Developer</div></h1>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- <div data-anchor="page2" class="pp-scrollable section section-2">
-      <div class="scroll-wrap">
-        <div class="scrollable-content">
-          <div class="vertical-title text-white d-none d-lg-block">
-            <span>what I do</span>
-          </div>
-          <div class="vertical-centred">
-            <div class="boxed boxed-inner">
-              <div class="boxed">
-                <div class="container">
-                  <div class="intro">
-                    <h2 class="title mb-5 pb-5">
-                      <span class="text-primary">My</span> specialization
-                    </h2>
-                    <div class="row-specialization row">
-                      <div class="col-specialization col-md-6 col-lg-4">
-                        <span
-                          class="icon-specialization icon-laptop-phone"
-                        ></span>
-                        <h4 class="text-uppercase">Mobile Design</h4>
-                        <p>
-                          Working with client and community, we deliver
-                          masterplans that create vibrant new places and spaces,
-                          attract people, and encourage investment through.
-                        </p>
-                      </div>
-                      <div class="col-specialization col-md-6 col-lg-4">
-                        <span
-                          class="icon-specialization icon-smartphone-embed"
-                        ></span>
-                        <h4 class="text-uppercase">Coding</h4>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Rerum fuga dicta voluptatum hic aut aspernatur
-                          magnam voluptates itaque atque quae laudantium,
-                          tempora at.
-                        </p>
-                      </div>
-                      <div class="col-specialization col-md-6 col-lg-4">
-                        <span class="icon-specialization icon-diamond2"></span>
-                        <h4 class="text-uppercase">Illustration</h4>
-                        <p>
-                          Working with client and community, we deliver
-                          masterplans that create vibrant new places and spaces,
-                          attract people, and encourage investment through.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="view-all">
-                      <a href="#"> Download resume </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <div data-anchor="page3" class="pp-scrollable text-white section section-3">
-      <div class="scroll-wrap">
-        <div
-          class="section-bg mask"
-          style="background-image: url()"
-        ></div>
-        <div class="scrollable-content">
-          <div class="vertical-title d-none d-lg-block">
-            <span>What I've Done</span>
-          </div>
-          <div class="vertical-centred">
-            <div class="boxed boxed-inner">
-              <div class="boxed">
-                <div class="container">
-                  <div class="intro">
-                    <div class="row row-resume">
-                      <div class="col-md-6 fadeY fadeY-1">
-                        <h2 class="resume-header title">Education</h2>
-                        <div class="col-resume">
-                          <div class="resume-content">
-                            <div class="resume-inner">
-                              <div class="resume-row">
-                                <h6 class="resume-type">
-                                  Specialization course
-                                </h6>
-                                <i class="resume-study"
-                                  >University of studies, Poland, Cracow<br />Jan
-                                  2004 - Dec 2006</i
-                                >
-                                <p class="resume-text">
-                                  Lorem ipsum dolor sit amet, consectetur
-                                  adipisicing elit. Minus nobis animi assumenda
-                                  sint recusandae! Dolor placeat debitis animi
-                                  illum quo repellendus pariatur, enim
-                                </p>
-                              </div>
-                              <div class="resume-row">
-                                <h6 class="resume-type">Academy course</h6>
-                                <i class="resume-study"
-                                  >University of studies, Poland, Cracow<br />Jan
-                                  2004 - Dec 2006</i
-                                >
-                                <p class="resume-text">
-                                  Lorem ipsum dolor sit amet, consectetur
-                                  adipisicing elit. Minus nobis animi assumenda
-                                  sint recusandae! Dolor placeat debitis animi
-                                  illum quo repellendus pariatur, enim
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6 pt-md-5 mt-md-5 fadeY fadeY-2">
-                        <h2 class="resume-header title">Experience</h2>
-                        <div class="col-resume">
-                          <div class="resume-content">
-                            <div class="resume-inner">
-                              <div class="resume-row">
-                                <h6 class="resume-type">
-                                  WEBDESIGNER & FRONT-END
-                                </h6>
-                                <i class="resume-study"
-                                  >University of studies, Poland, Cracow<br />Jan
-                                  2004 - Dec 2006</i
-                                >
-                                <p class="resume-text">
-                                  Lorem ipsum dolor sit amet, consectetur
-                                  adipisicing elit. Minus nobis animi assumenda
-                                  sint recusandae! Dolor placeat debitis animi
-                                  illum quo repellendus pariatur, enim
-                                </p>
-                              </div>
-                              <div class="resume-row">
-                                <h6 class="resume-type">WORDPRESS DEVELOPER</h6>
-                                <i class="resume-study"
-                                  >University of studies, Poland, Cracow<br />Jan
-                                  2004 - Dec 2006</i
-                                >
-                                <p class="resume-text">
-                                  Lorem ipsum dolor sit amet, consectetur
-                                  adipisicing elit. Minus nobis animi assumenda
-                                  sint recusandae! Dolor placeat debitis animi
-                                  illum quo repellendus pariatur, enim
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <div data-anchor="page4" class="pp-scrollable section section-4">
-      <div class="scroll-wrap">
-        <div
-          class="section-bg bg-about"
-          style="background-image: url()"
-        ></div>
-        <div class="scrollable-content">
-          <div class="vertical-title text-white d-none d-lg-block">
-            <span>about us</span>
-          </div>
-          <div class="vertical-centred">
-            <div class="boxed boxed-inner">
-              <div class="boxed">
-                <div class="container">
-                  <div class="intro">
-                    <div class="row align-items-center">
-                      <div class="col-lg-6 offset-xl-1">
-                        <div class="experience-box">
-                          <div class="experience-content">
-                            <div class="experience-number">4</div>
-                            <div class="experience-info">
-                              <div>Years<br />Experience<br />Working</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-5 mt-5 mt-xl-0">
-                        <h2 class="title">
-                          <span class="text-primary">The best</span> websites
-                        </h2>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Accusantium dicta sit pariatur odio unde deleniti
-                        eveniet.
-                        <div class="progress-bars">
-                          <div class="clearfix">
-                            <div class="number float-left">Mobile Design</div>
-                            <div class="number float-right">80%</div>
-                          </div>
-                          <div class="progress">
-                            <div class="progress-bar-wrp">
-                              <div
-                                class="progress-bar"
-                                role="progressbar"
-                                style="width: 80%"
-                                aria-valuenow="0"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                              ></div>
-                            </div>
-                          </div>
-                          <div class="clearfix">
-                            <div class="number float-left">Coding</div>
-                            <div class="number float-right">70%</div>
-                          </div>
-                          <div class="progress">
-                            <div class="progress-bar-wrp">
-                              <div
-                                class="progress-bar"
-                                role="progressbar"
-                                style="width: 70%"
-                                aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                              ></div>
-                            </div>
-                          </div>
-                          <div class="clearfix">
-                            <div class="number float-left">Illustration</div>
-                            <div class="number float-right">70%</div>
-                          </div>
-                          <div class="progress">
-                            <div class="progress-bar-wrp">
-                              <div
-                                class="progress-bar"
-                                role="progressbar"
-                                style="width: 70%"
-                                aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                              ></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <div data-anchor="page5" class="pp-scrollable text-white section section-5">
-      <div class="scroll-wrap">
-        <div class="bg-changer">
-          <div
-            class="section-bg project-1-bg"
-          ></div>
-          <div
-            class="section-bg project-2-bg"
-          ></div>
-          <div
-            class="section-bg project-3-bg"
-          ></div>
-          <div
-            class="section-bg project-4-bg"
-          ></div>
-        </div>
-        <div class="scrollable-content">
-          <div class="vertical-title d-none d-lg-block">
-            <span>Projects</span>
-          </div>
-          <div class="vertical-centred">
-            <div class="boxed boxed-inner">
-              <div class="boxed">
-                <div class="container">
-                  <div class="intro">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="project-row">
-                          <a class="active" href="https://github.com/hieronymous-bean/borges" target="_blank">
-                            <span class="project-number">01</span>
-                            <h2 class="project-title">Borges</h2>
-                            <div class="project-category">Web Application</div>
-                          </a>
-                        </div>
-                        <div class="project-row">
-                          <a href="https://github.com/hieronymous-bean/doughnet" target="_blank">
-                            <span class="project-number">02</span>
-                            <h2 class="project-title">Doughnet</h2>
-                            <div class="project-category">Web Application</div>
-                          </a>
-                        </div>
-                        <div class="project-row">
-                          <a href="https://github.com/hieronymous-bean/celestial-bodies" target="_blank">
-                            <span class="project-number">03</span>
-                            <h2 class="project-title">Celestial Bodies</h2>
-                            <div class="project-category">API Wrapper</div>
-                          </a>
-                        </div>
-                        <div class="project-row">
-                          <a href="https://github.com/hieronymous-bean/urchin" target="_blank">
-                            <span class="project-number">04</span>
-                            <h2 class="project-title">Urchin</h2>
-                            <div class="project-category">UI Library</div>
-                          </a>
-                        </div>
-                        <div class="view-all view-all-projects">
-                          <a href="https://github.com/hieronymous-bean?tab=repositories" target="_blank"> View all projects </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- <div data-anchor="page6" class="pp-scrollable section section-6">
-      <div class="scroll-wrap">
-        <div class="scrollable-content">
-          <div class="vertical-title text-white d-none d-lg-block">
-            <span>partners</span>
-          </div>
-          <div class="vertical-centred">
-            <div class="boxed boxed-inner">
-              <div class="boxed">
-                <div class="container">
-                  <div class="intro">
-                    <h2 class="title text-white">
-                      <span class="text-primary">Trusted</span> from Clients
-                    </h2>
-                    <div class="row row-partners">
-                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                        <div class="partner-inner">
-                          <img alt="" src="" />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                        <div class="partner-inner">
-                          <img alt="" src="" />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                        <div class="partner-inner">
-                          <img alt="" src="" />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                        <div class="partner-inner">
-                          <img alt="" src="" />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                        <div class="partner-inner">
-                          <img alt="" src="" />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                        <div class="partner-inner">
-                          <img alt="" src="" />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                        <div class="partner-inner">
-                          <img alt="" src="" />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                        <div class="partner-inner">
-                          <img alt="" src="" />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                        <div class="partner-inner">
-                          <img alt="" src="" />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                        <div class="partner-inner">
-                          <img alt="" src="" />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                        <div class="partner-inner">
-                          <img alt="" src="" />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                        <div class="partner-inner">
-                          <img alt="" src="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <div data-anchor="page7" class="pp-scrollable text-white section section-7">
-      <div class="scroll-wrap">
-        <div
-          class="section-bg"
-          style="background-image: url()"
-        ></div>
-        <div class="bg-quote"></div>
-        <div class="scrollable-content">
-          <div class="vertical-title d-none d-lg-block">
-            <span>testimonials</span>
-          </div>
-          <div class="vertical-centred">
-            <div class="boxed boxed-inner">
-              <div class="boxed">
-                <div class="container">
-                  <div class="intro">
-                    <div class="review-carousel owl-carousel">
-                      <div class="review-carousel-item">
-                        <div class="review-row">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="review-author">
-                                <div class="author-name">David & Elisa</div>
-                                <i>Apartment view lake at Brooklyn</i>
-                              </div>
-                            </div>
-                            <div class="col-md-7 text">
-                              <p>
-                                If you are seeking an Interior designer that
-                                will understand exactly your needs, and someone
-                                who will utilise their creative and technical
-                                skills in parity with your taste, then Suzanne
-                                at The Ramsay Studio is perfect.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="review-row">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="review-author">
-                                <div class="author-name">Amanda</div>
-                                <i>Apartment view lake at Brooklyn</i>
-                              </div>
-                            </div>
-                            <div class="col-md-7 text">
-                              <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Odio dolorem reiciendis
-                                doloremque veniam perspiciatis quam velit
-                                pariatur eius, repellendus dolores eveniet
-                                maiores sed. Quod quam minus dolore sed cumque
-                                aliquid.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="review-carousel-item">
-                        <div class="review-row">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="review-author">
-                                <div class="author-name">David & Elisa</div>
-                                <i>Apartment view lake at Brooklyn</i>
-                              </div>
-                            </div>
-                            <div class="col-md-7 text">
-                              <p>
-                                If you are seeking an Interior designer that
-                                will understand exactly your needs, and someone
-                                who will utilise their creative and technical
-                                skills in parity with your taste, then Suzanne
-                                at The Ramsay Studio is perfect.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="review-row">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="review-author">
-                                <div class="author-name">Amanda</div>
-                                <i>Apartment view lake at Brooklyn</i>
-                              </div>
-                            </div>
-                            <div class="col-md-7 text">
-                              <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Odio dolorem reiciendis
-                                doloremque veniam perspiciatis quam velit
-                                pariatur eius, repellendus dolores eveniet
-                                maiores sed. Quod quam minus dolore sed cumque
-                                aliquid.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="review-carousel-item">
-                        <div class="review-row">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="review-author">
-                                <div class="author-name">David & Elisa</div>
-                                <i>Apartment view lake at Brooklyn</i>
-                              </div>
-                            </div>
-                            <div class="col-md-7 text">
-                              <p>
-                                If you are seeking an Interior designer that
-                                will understand exactly your needs, and someone
-                                who will utilise their creative and technical
-                                skills in parity with your taste, then Suzanne
-                                at The Ramsay Studio is perfect.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="review-row">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="review-author">
-                                <div class="author-name">Amanda</div>
-                                <i>Apartment view lake at Brooklyn</i>
-                              </div>
-                            </div>
-                            <div class="col-md-7 text">
-                              <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Odio dolorem reiciendis
-                                doloremque veniam perspiciatis quam velit
-                                pariatur eius, repellendus dolores eveniet
-                                maiores sed. Quod quam minus dolore sed cumque
-                                aliquid.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <div data-anchor="page8" class="pp-scrollable section section-8">
-      <div class="scroll-wrap">
-        <div
-          class="section-bg"
-          style="background-image: url()"
-        ></div>
-        <div class="scrollable-content">
-          <div class="vertical-title text-white d-none d-lg-block">
-            <span>contact</span>
-          </div>
-          <div class="vertical-centred">
-            <div class="boxed boxed-inner">
-              <div class="boxed">
-                <div class="container">
-                  <div class="intro overflow-hidden">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <h2 class="title">
-                          <span class="text-primary">New York</span>, USA
-                        </h2>
-                        <h5 class="text-muted">
-                          166 Main Street, Beverly Hills, CA 90210
-                        </h5>
-                        <section class="contact-address">
-                          <h3>
-                            <a class="mail" href="mailto:contact@ramsay.com">
-                              contact@ramsay.com</a
-                            >
-                          </h3>
-                          <h3><span class="phone">+96 56-85-1379</span></h3>
-                        </section>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="contact-info">
-                          <form class="js-form" novalidate="novalidate">
-                            <div class="row">
-                              <div class="form-group col-sm-6">
-                                <input
-                                  type="text"
-                                  name="name"
-                                  required=""
-                                  placeholder="Name*"
-                                  aria-required="true"
-                                />
-                              </div>
-                              <div class="form-group col-sm-6">
-                                <input
-                                  type="email"
-                                  required=""
-                                  name="email"
-                                  placeholder="Email*"
-                                />
-                              </div>
-                              <div class="form-group col-sm-12">
-                                <input
-                                  type="text"
-                                  name="subject"
-                                  placeholder="Subject (Optinal)"
-                                />
-                              </div>
-                              <div class="form-group col-sm-12">
-                                <textarea
-                                  name="message"
-                                  required=""
-                                  placeholder="Message*"
-                                ></textarea>
-                              </div>
-                              <div
-                                class="form-group form-group-message col-sm-12"
-                              >
-                                <span id="success" class="text-primary"
-                                  >Thank You, your message is successfully
-                                  sent!</span
-                                >
-                                <span id="error" class="text-primary"
-                                  >Sorry, something went wrong
-                                </span>
-                              </div>
-                              <div class="col-sm-12">
-                                <button type="submit" class="btn">
-                                  Contact me
-                                </button>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-  </div>
+</div>
 </template>
 
 <script>
+
+import menu from '../data/menu.json'
+import portfolio from '../data/projects.json'
+
 export default {
   data: function () {
-    return {}
+    return {
+      navigation: menu,
+      projects: portfolio
+    }
   },
-  props: [],
-  methods: {},
+  props: [
+
+  ],
+  methods: {
+
+  },
+  computed: {
+    ProcessMenu: function() {
+
+    }
+  }
 }
 </script>
