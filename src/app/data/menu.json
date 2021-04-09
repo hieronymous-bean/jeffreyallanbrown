@@ -1,14 +1,17 @@
 {
 	"home": {
-		"url":"/",
-		"label": "Home"
+		"url":"#home",
+		"label": "Home",
+		"priority": 1
 	},
 	"about": {
-		"url":"/about",
-		"label": "About"
+		"url":"#about",
+		"label": "About",
+		"priority": 2
 	},
 	"projects": {
-		"url":"/projects",
-		"label": "Projects"
+		"url":"#projects",
+		"label": "Projects",
+		"priority": 3
 	}
 }

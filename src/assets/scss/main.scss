@@ -138,11 +138,12 @@ img.svg{
 /*---------------------------------------------------*/
 
 .waxon_tm_topbar{
-	top: -100px;
+	top: 0px;
 	left: 0px;
 	right: 0px;
 	z-index: 10;
 	padding: 20px 0px;
+	position: absolute;
 	
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
@@ -441,6 +442,7 @@ img.svg{
 	bottom: -20px;
 	left: -20px;
 	right: -20px;
+	background: #F5F5F5;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;

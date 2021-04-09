@@ -11,7 +11,8 @@ module.exports = ({
   entry: {
     main: './src/main.js',
     styles: './src/assets/scss/main.scss',
-    scripts: './src/assets/js/scripts.js'
+    scripts: './src/assets/js/scripts.js',
+    data: './src/app/data/projects.json'
   },
   output: {
     filename: '[name].bundle.js',
@@ -49,7 +50,14 @@ module.exports = ({
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         loader: 'file-loader',
         options: {
-          name: 'images/[contenthash].[ext]',
+          name: 'images/[name].[ext]?[hash:5]'
+        },
+      },
+      {
+        test: /\.pdf$/,
+        loader: 'file-loader',
+        options: {
+          name: 'docs/[name].[ext]?[hash:5]'
         },
       },
       {

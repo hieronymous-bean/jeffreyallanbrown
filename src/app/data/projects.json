@@ -1,13 +1,42 @@
 {
 	"borges": {
-		"name":"Borges",
-		"version":"",
-		"url":"",
+		"name":"borges",
+		"version":"0.0.1",
+		"url":"/projects/borges",
 		"description":"",
-		"created":"",
-		"category":"",
-		"thumbnail":"",
-		"repository":"",
-		"keywords":""
+		"category":"Applications",
+		"thumbnail":"borges.png",
+		"repository":"https://github.com/hieronymous-bean/borges.git",
+		"keywords":"editor,writer,author"
+	},
+	"doughnet": {
+		"name":"doughnet",
+		"version":"0.0.1",
+		"url":"/projects/doughnet",
+		"description":"",
+		"category":"Applications",
+		"thumbnail":"doughnet.png",
+		"repository":"https://github.com/hieronymous-bean/doughnet.git",
+		"keywords":"personal finance,financial"
+	},
+	"urchin": {
+		"name":"urchin",
+		"version":"0.0.1",
+		"url":"/projects/urchin",
+		"description":"",
+		"category":"UI Libraries",
+		"thumbnail":"urchin.png",
+		"repository":"https://github.com/hieronymous-bean/urchin.git",
+		"keywords":"front-end,ui,css library"
+	},
+	"exemplar": {
+		"name":"exemplar",
+		"version":"0.0.1",
+		"url":"/projects/exemplar",
+		"description":"",
+		"category":"Utilities",
+		"thumbnail":"exemplar.png",
+		"repository":"https://github.com/hieronymous-bean/exemplar.git",
+		"keywords":"utility,xml,json"
 	}
 }
