@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="<%= htmlWebpackPlugin.options.lang %>">
+  <head>
+    <base href="<%= htmlWebpackPlugin.options.baseHref %>">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <% for (item2 of htmlWebpackPlugin.options.links) { %><link<% for (key in item2) { %> <%= key %>="<%= item2[key] %>"<% } %>><% } %>
+  </head>
+  <body>
+    <div class="animsition" id="app"></div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<%= htmlWebpackPlugin.options.googleAnalytics.trackingId %>"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '<%= htmlWebpackPlugin.options.googleAnalytics.trackingId %>');
+    </script>
+    
+  </body>
+</html>

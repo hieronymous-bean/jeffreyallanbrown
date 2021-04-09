@@ -6,7 +6,7 @@
       <div class="container">
         <div class="topbar_inner">
           <div class="logo">
-            <a href="#">
+            <a href="/">
               <img class="light" src="../../assets/img/logo.png" alt="jeffreyallanbrown" />
             </a>
           </div>
@@ -73,6 +73,7 @@
               <h3 class="stroke">Jeffrey</h3>
               <h3>Brown</h3>
               <span>Full-Stack Web Developer</span>
+              <ion-icon name="heart"></ion-icon>
             </div>
           </div>
           <div class="waxon_tm_down" data-skin="dark" data-position="">
@@ -165,7 +166,14 @@
             </li>
             <li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
               <div class="social">
-                
+                <ul>
+                  <li>
+                    <a href="#">
+                      <span class="first"><img class="svg" src="../../assets/img/svg/github.svg" alt="" /></span>
+                      <span class="second"><img class="svg" src="../../assets/img/svg/github.svg" alt="" /></span>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
